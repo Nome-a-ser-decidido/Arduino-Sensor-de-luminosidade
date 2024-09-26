@@ -33,10 +33,10 @@
   // Função principal
   void loop(){
     sensorValueRaw = analogRead(sensorPin); // Lê o valor do sensor
-    int sensorValue = map(sensorValueRaw, 17, 1005, 0, 100); // Converte o valor para o intervalo de PWM
+    int sensorValue = map(sensorValueRaw, 17, 1005, 0, 100); // Converte o valor minimo e maximo para 0 a 100
     Serial.print("Intensidade de Luz: ");
-    Serial.println(sensorValue); // Imprime o valor do sensor no monitor serial DELETAR
-    Serial.println(sensorValueRaw);
+    Serial.println(sensorValue); // Imprime o valor do sensor no monitor serial 
+    Serial.println(sensorValueRaw); //Imprime o valor cru do sensor no monitor serial
   
     
     if (sensorValue >= yellowAlert && sensorValue <= redAlert){ //Condição para acionar o alerta amarelo
