@@ -33,7 +33,7 @@
   // Função principal
   void loop(){
     sensorValueRaw = analogRead(sensorPin); // Lê o valor do sensor
-    int sensorValue = map(sensorValueRaw, 17, 1005, 0, 100); // Converte o valor minimo e maximo para 0 a 100
+    int sensorValue = map(sensorValueRaw, 17, 1005, 0, 100); // Converte o valor minimo e maximo para 0 a 100, é necessário calibrar os valores de acordo com o ambiente
     Serial.print("Intensidade de Luz: ");
     Serial.println(sensorValue); // Imprime o valor do sensor no monitor serial 
     Serial.println(sensorValueRaw); //Imprime o valor cru do sensor no monitor serial
