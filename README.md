@@ -21,3 +21,7 @@ O código lê o valor de luminosidade que está sendo exercida no Fotorresistor,
 <h2> Visualização </h2>
 
 ![image](https://github.com/user-attachments/assets/e88ed5bf-5707-465d-bd6b-6726655eac4f)
+
+<h2> Video </h2>
+
+[![Video](https://img.youtube.com/vi/gikVGDdt4sY/0.jpg)](https://youtu.be/gikVGDdt4sY)
